@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bug WA by Alvaro - Sim</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="card">
+    <div class="avatar">
+      <img src="avatar.png" alt="avatar">
+    </div>
+
+    <h1 id="title">Login</h1>
+    <p class="subtitle">BETA TEST 🔥</p>
+
+    <div class="form">
+      <input id="username" placeholder="Username" autocomplete="off">
+      <input id="password" placeholder="Password" type="password" autocomplete="off">
+      <button id="btnLogin">➡ Masuk</button>
+    </div>
+
+    <div id="mainScreen" class="hidden">
+      <h2>Welcome,beta 🔥</h2>
+      <p class="status"><span class="dot"></span>CONNECTED</p>
+
+      <input id="targetNumber" placeholder="example : 62xxxx">
+      <div class="selectBox">
+        <button id="openMenu">Menu Bug ▾</button>
+        <div id="menuList" class="menu hidden">
+          <label><input type="radio" name="menu" value="Menu Bug" checked> Menu Bug</label>
+          <label><input type="radio" name="menu" value="CRASH ANDROID"> CRASH ANDROID</label>
+          <label><input type="radio" name="menu" value="FC HARD"> FC HARD</label>
+          <label><input type="radio" name="menu" value="DELAY INVISIBLE"> DELAY INVISIBLE</label>
+          <label><input type="radio" name="menu" value="FC CLICK"> FC CLICK</label>
+        </div>
+      </div>
+
+      <button id="btnSend" class="big">▶ SEND</button>
+
+      <div class="row">
+        <button class="small" id="developerBtn">Developer</button>
+        <button class="small" id="logoutBtn">Logout</button>
+      </div>
+
+      <p class="footer">STROM TITAN V1.0 · Bug WA by Alvaro</p>
+    </div>
+
+    <!-- modal -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
